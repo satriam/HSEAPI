@@ -41,6 +41,9 @@ $routes-> resource('hauling');
 $routes-> resource('Readcheckin');
 $routes-> resource('Safety');
 $routes-> resource('Checkin');
+$routes-> resource('pengaduan');
+
+
 
 $routes->put('auth','Auth::index',['filter'=>'auth']);
 // $routes->resource('login');
