@@ -23,7 +23,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL = 'https://api.sfourtt.my.id/';
+	public $baseURL = 'https://bgsat.my.id/';
 
 	/**
 	 * --------------------------------------------------------------------------
