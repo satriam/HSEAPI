@@ -1,0 +1,66 @@
+CRITICAL - 2023-10-01 19:34:57 --> Signature verification failed
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 136.
+ 1 APPPATH\Controllers\Dumping.php(217): Firebase\JWT\JWT::decode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjk0NTc2NDkyLCJleHAiOjE2OTcxNjg0OTJ9.JxUat1zSIkjy3C6B64qAhkyUZAPcVrMiBg_3Xa1vt7E', 'secret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dumping->tampil()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dumping))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-10-01 20:56:49 --> unlink(C:\xampp\htdocs\APIclubhouse\public): Resource temporarily unavailable
+in APPPATH\Controllers\Hauling.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\APIclubhouse\\public): Resource temporarily unavailable', 'C:\\xampp\\htdocs\\APIclubhouse\\app\\Controllers\\Hauling.php', 187)
+ 2 APPPATH\Controllers\Hauling.php(187): unlink('C:\\xampp\\htdocs\\APIclubhouse\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Hauling->delete('id')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hauling))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-10-01 20:57:20 --> unlink(C:\xampp\htdocs\APIclubhouse\public): Resource temporarily unavailable
+in APPPATH\Controllers\Hauling.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\APIclubhouse\\public): Resource temporarily unavailable', 'C:\\xampp\\htdocs\\APIclubhouse\\app\\Controllers\\Hauling.php', 187)
+ 2 APPPATH\Controllers\Hauling.php(187): unlink('C:\\xampp\\htdocs\\APIclubhouse\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Hauling->delete('76')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hauling))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-10-01 21:02:26 --> Signature verification failed
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 136.
+ 1 APPPATH\Controllers\Me.php(27): Firebase\JWT\JWT::decode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjk1MzU0MzA4LCJleHAiOjE2OTc5NDYzMDh9.G4gFivROLpnJ4Hcr5fzYfmug6TotvZm6aU5sv6GNYmA', 'secret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Me->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Me))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-10-01 21:02:32 --> Signature verification failed
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 136.
+ 1 APPPATH\Controllers\Dumping.php(217): Firebase\JWT\JWT::decode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjk1MzU0MzA4LCJleHAiOjE2OTc5NDYzMDh9.G4gFivROLpnJ4Hcr5fzYfmug6TotvZm6aU5sv6GNYmA', 'secret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dumping->tampil()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dumping))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-10-01 21:02:52 --> Signature verification failed
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 136.
+ 1 APPPATH\Controllers\Me.php(27): Firebase\JWT\JWT::decode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjk1MzU0MzA4LCJleHAiOjE2OTc5NDYzMDh9.G4gFivROLpnJ4Hcr5fzYfmug6TotvZm6aU5sv6GNYmA', 'secret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Me->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Me))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-10-01 21:02:54 --> Signature verification failed
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 136.
+ 1 APPPATH\Controllers\Dumping.php(217): Firebase\JWT\JWT::decode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjk1MzU0MzA4LCJleHAiOjE2OTc5NDYzMDh9.G4gFivROLpnJ4Hcr5fzYfmug6TotvZm6aU5sv6GNYmA', 'secret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dumping->tampil()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dumping))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-10-01 21:37:55 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 158.
+ 1 APPPATH\Controllers\Dumping.php(217): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTYyMDUzMTQsImV4cCI6MTY5NjIxMjUxNCwidWlkIjoiMiIsImVtYWlsIjoidmlrdG9yQHJlaGFuZGxpbmcuY29tIiwicm9sZSI6InVzZXIiLCJuYW1hIjoiVmlrdG9yIEhhc2lidWFuIn0.YMU-U-GaevLIpyY-sfhVzKthJ4_1PVhBOr2xnOUq5ao', 'secret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dumping->tampil()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dumping))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')

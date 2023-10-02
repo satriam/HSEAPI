@@ -1,0 +1,388 @@
+CRITICAL - 2023-06-10 00:00:34 --> Call to a member function where() on null
+in APPPATH\Controllers\Checkin.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Checkin->update('12')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT\\Desktop\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-06-10 00:01:42 --> Call to a member function where() on null
+in APPPATH\Controllers\Checkin.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Checkin->update('12')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT\\Desktop\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-06-10 00:04:13 --> Call to a member function where() on null
+in APPPATH\Controllers\Checkin.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Checkin->update('12')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT\\Desktop\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-06-10 00:07:08 --> Undefined index: nama
+in APPPATH\Controllers\Checkin.php on line 47.
+ 1 APPPATH\Controllers\Checkin.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama', 'C:\\Users\\SFourT\\Desktop\\APIclubhouse\\app\\Controllers\\Checkin.php', 47, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Checkin->update('12')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkin))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT\\Desktop\\APIclubhouse\\public\\index.php')
+ERROR - 2023-06-10 00:07:31 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ta`.`checkin`, CONSTRAINT `fk_lokasi` FOREIGN KEY (`lokasi_id`) REFERENCES `locations` (`id_locations`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ch...', 0)
+#1 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ch...')
+#2 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ch...')
+#3 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ch...', Array, false)
+#4 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\SFourT\Desktop\APIclubhouse\app\Controllers\Checkin.php(49): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Checkin->update('12')
+#10 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkin))
+#11 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\SFourT\Desktop\APIclubhouse\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT...')
+#14 {main}
+CRITICAL - 2023-06-10 00:07:31 --> Cannot add or update a child row: a foreign key constraint fails (`ta`.`checkin`, CONSTRAINT `fk_lokasi` FOREIGN KEY (`lokasi_id`) REFERENCES `locations` (`id_locations`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `checkin` (`status`) VALUES (\'selesai\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `checkin` (`status`) VALUES (\'selesai\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `checkin` (`status`) VALUES (\'selesai\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `checkin` (`status`) VALUES (:status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Checkin.php(49): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Checkin->update('12')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkin))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT\\Desktop\\APIclubhouse\\public\\index.php')
+ERROR - 2023-06-10 00:43:54 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ta`.`checkin`, CONSTRAINT `fk_lokasi` FOREIGN KEY (`lokasi_id`) REFERENCES `locations` (`id_locations`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ch...', 0)
+#1 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ch...')
+#2 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ch...')
+#3 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ch...', Array, false)
+#4 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\SFourT\Desktop\APIclubhouse\app\Controllers\Checkin.php(49): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Checkin->update('12')
+#10 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkin))
+#11 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\SFourT\Desktop\APIclubhouse\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT...')
+#14 {main}
+CRITICAL - 2023-06-10 00:43:54 --> Cannot add or update a child row: a foreign key constraint fails (`ta`.`checkin`, CONSTRAINT `fk_lokasi` FOREIGN KEY (`lokasi_id`) REFERENCES `locations` (`id_locations`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `checkin` (`status`) VALUES (\'selesai\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `checkin` (`status`) VALUES (\'selesai\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `checkin` (`status`) VALUES (\'selesai\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `checkin` (`status`) VALUES (:status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Checkin.php(49): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Checkin->update('12')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkin))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT\\Desktop\\APIclubhouse\\public\\index.php')
+ERROR - 2023-06-10 00:48:24 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ta`.`checkin`, CONSTRAINT `fk_lokasi` FOREIGN KEY (`lokasi_id`) REFERENCES `locations` (`id_locations`) ON DELETE CASCADE ON UPDATE NO ACTION) in C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ch...', 0)
+#1 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ch...')
+#2 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ch...')
+#3 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ch...', Array, false)
+#4 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\SFourT\Desktop\APIclubhouse\app\Controllers\Checkin.php(49): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Checkin->update('12')
+#10 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkin))
+#11 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\SFourT\Desktop\APIclubhouse\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT...')
+#14 {main}
+CRITICAL - 2023-06-10 00:48:24 --> Cannot add or update a child row: a foreign key constraint fails (`ta`.`checkin`, CONSTRAINT `fk_lokasi` FOREIGN KEY (`lokasi_id`) REFERENCES `locations` (`id_locations`) ON DELETE CASCADE ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `checkin` (`status`) VALUES (\'selesai\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `checkin` (`status`) VALUES (\'selesai\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `checkin` (`status`) VALUES (\'selesai\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `checkin` (`status`) VALUES (:status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Checkin.php(49): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Checkin->update('12')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkin))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT\\Desktop\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-06-10 00:50:34 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Checkin.php(49): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Checkin->update('12')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkin))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT\\Desktop\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-06-10 01:16:34 --> Call to a member function getName() on null
+in APPPATH\Controllers\Register.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT\\Desktop\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-06-10 01:17:14 --> Call to a member function getName() on null
+in APPPATH\Controllers\Register.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT\\Desktop\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-06-10 01:17:20 --> Call to a member function getName() on null
+in APPPATH\Controllers\Register.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT\\Desktop\\APIclubhouse\\public\\index.php')
+ERROR - 2023-06-10 01:53:53 --> mysqli_sql_exception: Column 'status' in field list is ambiguous in C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `checkin...', 0)
+#1 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `checkin...')
+#2 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `checkin...')
+#3 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `checkin...', Array, false)
+#4 C:\Users\SFourT\Desktop\APIclubhouse\app\Models\CheckinModel.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\SFourT\Desktop\APIclubhouse\app\Controllers\Checkin.php(18): App\Models\CheckinModel->tampil()
+#6 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Checkin->index()
+#7 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkin))
+#8 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\SFourT\Desktop\APIclubhouse\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT...')
+#11 {main}
+CRITICAL - 2023-06-10 01:53:53 --> Column 'status' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `checkin`.`id_checkin`, `nama_lokasi`, `created_at`, `nama`, `locations`.`path_gambar`, `email`, `status`, `updated_at`
+FROM `checkin`
+JOIN `users` ON `users`.`id_users`=`checkin`.`user_id`
+JOIN `locations` ON `locations`.`id_locations`=`checkin`.`lokasi_id`
+WHERE `locations`.`akses` = \'admin renang\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `checkin`.`id_checkin`, `nama_lokasi`, `created_at`, `nama`, `locations`.`path_gambar`, `email`, `status`, `updated_at`
+FROM `checkin`
+JOIN `users` ON `users`.`id_users`=`checkin`.`user_id`
+JOIN `locations` ON `locations`.`id_locations`=`checkin`.`lokasi_id`
+WHERE `locations`.`akses` = \'admin renang\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `checkin`.`id_checkin`, `nama_lokasi`, `created_at`, `nama`, `locations`.`path_gambar`, `email`, `status`, `updated_at`
+FROM `checkin`
+JOIN `users` ON `users`.`id_users`=`checkin`.`user_id`
+JOIN `locations` ON `locations`.`id_locations`=`checkin`.`lokasi_id`
+WHERE `locations`.`akses` = \'admin renang\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `checkin`.`id_checkin`, `nama_lokasi`, `created_at`, `nama`, `locations`.`path_gambar`, `email`, `status`, `updated_at`
+FROM `checkin`
+JOIN `users` ON `users`.`id_users`=`checkin`.`user_id`
+JOIN `locations` ON `locations`.`id_locations`=`checkin`.`lokasi_id`
+WHERE `locations`.`akses` = :locations.akses:', [...], false)
+ 5 APPPATH\Models\CheckinModel.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Checkin.php(18): App\Models\CheckinModel->tampil()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Checkin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT\\Desktop\\APIclubhouse\\public\\index.php')
+ERROR - 2023-06-10 05:27:27 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ta`.`users`, CONSTRAINT `Roles` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id_roles`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `users` ...', 0)
+#1 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(690): CodeIgniter\Model->update('1', Array)
+#8 C:\Users\SFourT\Desktop\APIclubhouse\app\Controllers\Auth.php(61): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Auth->update('1')
+#10 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\SFourT\Desktop\APIclubhouse\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT...')
+#14 {main}
+CRITICAL - 2023-06-10 05:27:27 --> Cannot add or update a child row: a foreign key constraint fails (`ta`.`users`, CONSTRAINT `Roles` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id_roles`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `users` SET `email` = \'Satriabae43@gmail.com\', `nama` = \'satria mulya Adiwardana\', `role_id` = \'Pilih\', `nopeg` = \'091101\', `id_users` = \'1\'
+WHERE `users`.`id_users` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `email` = \'Satriabae43@gmail.com\', `nama` = \'satria mulya Adiwardana\', `role_id` = \'Pilih\', `nopeg` = \'091101\', `id_users` = \'1\'
+WHERE `users`.`id_users` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `email` = \'Satriabae43@gmail.com\', `nama` = \'satria mulya Adiwardana\', `role_id` = \'Pilih\', `nopeg` = \'091101\', `id_users` = \'1\'
+WHERE `users`.`id_users` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `email` = :email:, `nama` = :nama:, `role_id` = :role_id:, `nopeg` = :nopeg:, `id_users` = :id_users:
+WHERE `users`.`id_users` IN :users.id_users:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH\BaseModel.php(690): CodeIgniter\Model->update('1', [...])
+ 9 APPPATH\Controllers\Auth.php(61): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->update('1')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT\\Desktop\\APIclubhouse\\public\\index.php')
+ERROR - 2023-06-10 05:29:53 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ta`.`users`, CONSTRAINT `Roles` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id_roles`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `users` ...', 0)
+#1 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(690): CodeIgniter\Model->update('1', Array)
+#8 C:\Users\SFourT\Desktop\APIclubhouse\app\Controllers\Auth.php(61): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Auth->update('1')
+#10 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\SFourT\Desktop\APIclubhouse\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT...')
+#14 {main}
+CRITICAL - 2023-06-10 05:29:53 --> Cannot add or update a child row: a foreign key constraint fails (`ta`.`users`, CONSTRAINT `Roles` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id_roles`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `users` SET `email` = \'Satriabae43@gmail.com\', `nama` = \'satria mulya Adiwardana\', `role_id` = \'Pilih\', `nopeg` = \'091101\', `status` = \'Proses\', `id_users` = \'1\'
+WHERE `users`.`id_users` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `email` = \'Satriabae43@gmail.com\', `nama` = \'satria mulya Adiwardana\', `role_id` = \'Pilih\', `nopeg` = \'091101\', `status` = \'Proses\', `id_users` = \'1\'
+WHERE `users`.`id_users` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `email` = \'Satriabae43@gmail.com\', `nama` = \'satria mulya Adiwardana\', `role_id` = \'Pilih\', `nopeg` = \'091101\', `status` = \'Proses\', `id_users` = \'1\'
+WHERE `users`.`id_users` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `email` = :email:, `nama` = :nama:, `role_id` = :role_id:, `nopeg` = :nopeg:, `status` = :status:, `id_users` = :id_users:
+WHERE `users`.`id_users` IN :users.id_users:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH\BaseModel.php(690): CodeIgniter\Model->update('1', [...])
+ 9 APPPATH\Controllers\Auth.php(61): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->update('1')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT\\Desktop\\APIclubhouse\\public\\index.php')
+ERROR - 2023-06-10 05:30:02 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ta`.`users`, CONSTRAINT `Roles` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id_roles`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `users` ...', 0)
+#1 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(690): CodeIgniter\Model->update('1', Array)
+#8 C:\Users\SFourT\Desktop\APIclubhouse\app\Controllers\Auth.php(61): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Auth->update('1')
+#10 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\SFourT\Desktop\APIclubhouse\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT...')
+#14 {main}
+CRITICAL - 2023-06-10 05:30:02 --> Cannot add or update a child row: a foreign key constraint fails (`ta`.`users`, CONSTRAINT `Roles` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id_roles`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `users` SET `email` = \'Satriabae43@gmail.com\', `nama` = \'satria mulya Adiwardana\', `role_id` = \'Pilih\', `nopeg` = \'091101\', `status` = \'Proses\', `id_users` = \'1\'
+WHERE `users`.`id_users` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `email` = \'Satriabae43@gmail.com\', `nama` = \'satria mulya Adiwardana\', `role_id` = \'Pilih\', `nopeg` = \'091101\', `status` = \'Proses\', `id_users` = \'1\'
+WHERE `users`.`id_users` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `email` = \'Satriabae43@gmail.com\', `nama` = \'satria mulya Adiwardana\', `role_id` = \'Pilih\', `nopeg` = \'091101\', `status` = \'Proses\', `id_users` = \'1\'
+WHERE `users`.`id_users` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `email` = :email:, `nama` = :nama:, `role_id` = :role_id:, `nopeg` = :nopeg:, `status` = :status:, `id_users` = :id_users:
+WHERE `users`.`id_users` IN :users.id_users:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH\BaseModel.php(690): CodeIgniter\Model->update('1', [...])
+ 9 APPPATH\Controllers\Auth.php(61): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->update('1')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT\\Desktop\\APIclubhouse\\public\\index.php')
+ERROR - 2023-06-10 05:32:09 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ta`.`users`, CONSTRAINT `Roles` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id_roles`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `users` ...', 0)
+#1 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(690): CodeIgniter\Model->update('1', Array)
+#8 C:\Users\SFourT\Desktop\APIclubhouse\app\Controllers\Auth.php(61): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Auth->update('1')
+#10 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\SFourT\Desktop\APIclubhouse\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT...')
+#14 {main}
+CRITICAL - 2023-06-10 05:32:09 --> Cannot add or update a child row: a foreign key constraint fails (`ta`.`users`, CONSTRAINT `Roles` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id_roles`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `users` SET `email` = \'Satriabae43@gmail.com\', `nama` = \'satria mulya Adiwardana\', `role_id` = \'Pilih\', `nopeg` = \'091101\', `status` = \'Proses\', `id_users` = \'1\'
+WHERE `users`.`id_users` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `email` = \'Satriabae43@gmail.com\', `nama` = \'satria mulya Adiwardana\', `role_id` = \'Pilih\', `nopeg` = \'091101\', `status` = \'Proses\', `id_users` = \'1\'
+WHERE `users`.`id_users` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `email` = \'Satriabae43@gmail.com\', `nama` = \'satria mulya Adiwardana\', `role_id` = \'Pilih\', `nopeg` = \'091101\', `status` = \'Proses\', `id_users` = \'1\'
+WHERE `users`.`id_users` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `email` = :email:, `nama` = :nama:, `role_id` = :role_id:, `nopeg` = :nopeg:, `status` = :status:, `id_users` = :id_users:
+WHERE `users`.`id_users` IN :users.id_users:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH\BaseModel.php(690): CodeIgniter\Model->update('1', [...])
+ 9 APPPATH\Controllers\Auth.php(61): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->update('1')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT\\Desktop\\APIclubhouse\\public\\index.php')
+ERROR - 2023-06-10 05:32:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ta`.`users`, CONSTRAINT `Roles` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id_roles`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `users` ...', 0)
+#1 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(690): CodeIgniter\Model->update('1', Array)
+#8 C:\Users\SFourT\Desktop\APIclubhouse\app\Controllers\Auth.php(61): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Auth->update('1')
+#10 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\SFourT\Desktop\APIclubhouse\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\SFourT\Desktop\APIclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT...')
+#14 {main}
+CRITICAL - 2023-06-10 05:32:15 --> Cannot add or update a child row: a foreign key constraint fails (`ta`.`users`, CONSTRAINT `Roles` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id_roles`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `users` SET `email` = \'Satriabae43@gmail.com\', `nama` = \'satria mulya Adiwardana\', `role_id` = \'Pilih\', `nopeg` = \'091101\', `status` = \'Proses\', `id_users` = \'1\'
+WHERE `users`.`id_users` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `email` = \'Satriabae43@gmail.com\', `nama` = \'satria mulya Adiwardana\', `role_id` = \'Pilih\', `nopeg` = \'091101\', `status` = \'Proses\', `id_users` = \'1\'
+WHERE `users`.`id_users` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `email` = \'Satriabae43@gmail.com\', `nama` = \'satria mulya Adiwardana\', `role_id` = \'Pilih\', `nopeg` = \'091101\', `status` = \'Proses\', `id_users` = \'1\'
+WHERE `users`.`id_users` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `email` = :email:, `nama` = :nama:, `role_id` = :role_id:, `nopeg` = :nopeg:, `status` = :status:, `id_users` = :id_users:
+WHERE `users`.`id_users` IN :users.id_users:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH\BaseModel.php(690): CodeIgniter\Model->update('1', [...])
+ 9 APPPATH\Controllers\Auth.php(61): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->update('1')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SFourT\\Desktop\\APIclubhouse\\public\\index.php')

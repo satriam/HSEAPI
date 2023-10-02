@@ -1,0 +1,241 @@
+CRITICAL - 2023-09-29 01:40:57 --> Undefined variable $db
+in APPPATH\Controllers\Safety.php on line 83.
+ 1 APPPATH\Controllers\Safety.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\APIclubhouse\\app\\Controllers\\Safety.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Safety->delete('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Safety))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+ERROR - 2023-09-29 01:41:20 --> mysqli_sql_exception: Unknown column 'id_safety' in 'where clause' in C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\APIclubhouse\app\Controllers\Safety.php(87): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Safety->delete('2')
+#6 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Safety))
+#7 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\APIclubhouse\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-09-29 01:41:20 --> Unknown column 'id_safety' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `loadings`
+WHERE `id_safety` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `loadings`
+WHERE `id_safety` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `loadings`
+WHERE `id_safety` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `loadings`
+WHERE `id_safety` = :id_safety:', [...], false)
+ 5 APPPATH\Controllers\Safety.php(87): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Safety->delete('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Safety))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-09-29 01:42:13 --> Undefined variable $usersTable
+in APPPATH\Controllers\Safety.php on line 91.
+ 1 APPPATH\Controllers\Safety.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usersTable', 'C:\\xampp\\htdocs\\APIclubhouse\\app\\Controllers\\Safety.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Safety->delete('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Safety))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-09-29 01:42:33 --> unlink(C:\xampp\htdocs\APIclubhouse\public/loadings/1695969274.jpeg): No such file or directory
+in APPPATH\Controllers\Safety.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\APIclubhouse\\public/loadings/1695969274.jpeg): No such file or directory', 'C:\\xampp\\htdocs\\APIclubhouse\\app\\Controllers\\Safety.php', 92)
+ 2 APPPATH\Controllers\Safety.php(92): unlink('C:\\xampp\\htdocs\\APIclubhouse\\public/loadings/1695969274.jpeg')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Safety->delete('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Safety))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-09-29 01:43:20 --> unlink(/loadings/1695969274.jpeg): No such file or directory
+in APPPATH\Controllers\Safety.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/loadings/1695969274.jpeg): No such file or directory', 'C:\\xampp\\htdocs\\APIclubhouse\\app\\Controllers\\Safety.php', 92)
+ 2 APPPATH\Controllers\Safety.php(92): unlink('/loadings/1695969274.jpeg')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Safety->delete('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Safety))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-09-29 01:44:00 --> unlink(/safety/1695969274.jpeg): No such file or directory
+in APPPATH\Controllers\Safety.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/safety/1695969274.jpeg): No such file or directory', 'C:\\xampp\\htdocs\\APIclubhouse\\app\\Controllers\\Safety.php', 92)
+ 2 APPPATH\Controllers\Safety.php(92): unlink('/safety/1695969274.jpeg')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Safety->delete('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Safety))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-09-29 01:44:29 --> unlink(/safetycampaign/1695969274.jpeg): No such file or directory
+in APPPATH\Controllers\Safety.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/safetycampaign/1695969274.jpeg): No such file or directory', 'C:\\xampp\\htdocs\\APIclubhouse\\app\\Controllers\\Safety.php', 92)
+ 2 APPPATH\Controllers\Safety.php(92): unlink('/safetycampaign/1695969274.jpeg')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Safety->delete('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Safety))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+ERROR - 2023-09-29 18:57:22 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_she', 3306, '', 0)
+#1 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\APIclubhouse\app\Controllers\Hauling.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Hauling->index()
+#8 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hauling))
+#9 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\APIclubhouse\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\APIclubhouse\app\Controllers\Hauling.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Hauling->index()
+#7 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hauling))
+#8 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\APIclubhouse\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-29 18:57:22 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `haulings`
+ORDER BY `id_haulings` ASC', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Hauling.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Hauling->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hauling))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-09-29 18:58:30 --> Signature verification failed
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 136.
+ 1 APPPATH\Controllers\Hauling.php(245): Firebase\JWT\JWT::decode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjk0NTc2NDkyLCJleHAiOjE2OTcxNjg0OTJ9.JxUat1zSIkjy3C6B64qAhkyUZAPcVrMiBg_3Xa1vt7E', 'secret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Hauling->tampil()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hauling))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-09-29 19:24:41 --> Signature verification failed
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 136.
+ 1 APPPATH\Controllers\Me.php(27): Firebase\JWT\JWT::decode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjk0NTc2NDkyLCJleHAiOjE2OTcxNjg0OTJ9.JxUat1zSIkjy3C6B64qAhkyUZAPcVrMiBg_3Xa1vt7E', 'secret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Me->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Me))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-09-29 19:25:39 --> Signature verification failed
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 136.
+ 1 APPPATH\Controllers\Me.php(27): Firebase\JWT\JWT::decode('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjk0NTc2NDkyLCJleHAiOjE2OTcxNjg0OTJ9.JxUat1zSIkjy3C6B64qAhkyUZAPcVrMiBg_3Xa1vt7E', 'secret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Me->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Me))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+ERROR - 2023-09-29 19:41:34 --> mysqli_sql_exception: Unknown column 'users.id' in 'where clause' in C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama`, ...', 0)
+#1 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`, ...')
+#2 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`, ...')
+#3 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama`, ...', Array, false)
+#4 C:\xampp\htdocs\APIclubhouse\app\Controllers\Me.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Me->index()
+#6 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Me))
+#7 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\APIclubhouse\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-09-29 21:51:56 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 158.
+ 1 APPPATH\Controllers\Loading.php(320): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTYwMzUxMDMsImV4cCI6MTY5NjA0MjMwMywidWlkIjoiMSIsImVtYWlsIjoic2F0cmlhQHJlaGFuZGxpbmcuY29tIiwicm9sZSI6InVzZXIiLCJuYW1hIjoiU2F0cmlhIE11bHlhIEFkaXdhcmRhbmEifQ.YtgQw5z1g5pBTVrdFCPwM9gBprk4ev4NVtqd0XCzhgM', 'secret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loading->tampil()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loading))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-09-29 21:52:41 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 158.
+ 1 APPPATH\Controllers\Loading.php(320): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTYwMzUxMDMsImV4cCI6MTY5NjA0MjMwMywidWlkIjoiMSIsImVtYWlsIjoic2F0cmlhQHJlaGFuZGxpbmcuY29tIiwicm9sZSI6InVzZXIiLCJuYW1hIjoiU2F0cmlhIE11bHlhIEFkaXdhcmRhbmEifQ.YtgQw5z1g5pBTVrdFCPwM9gBprk4ev4NVtqd0XCzhgM', 'secret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loading->tampil()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loading))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-09-29 21:52:43 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 158.
+ 1 APPPATH\Controllers\Loading.php(320): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTYwMzUxMDMsImV4cCI6MTY5NjA0MjMwMywidWlkIjoiMSIsImVtYWlsIjoic2F0cmlhQHJlaGFuZGxpbmcuY29tIiwicm9sZSI6InVzZXIiLCJuYW1hIjoiU2F0cmlhIE11bHlhIEFkaXdhcmRhbmEifQ.YtgQw5z1g5pBTVrdFCPwM9gBprk4ev4NVtqd0XCzhgM', 'secret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loading->tampil()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loading))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-09-29 21:53:30 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 158.
+ 1 APPPATH\Controllers\Me.php(27): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTYwMzUxMDMsImV4cCI6MTY5NjA0MjMwMywidWlkIjoiMSIsImVtYWlsIjoic2F0cmlhQHJlaGFuZGxpbmcuY29tIiwicm9sZSI6InVzZXIiLCJuYW1hIjoiU2F0cmlhIE11bHlhIEFkaXdhcmRhbmEifQ.YtgQw5z1g5pBTVrdFCPwM9gBprk4ev4NVtqd0XCzhgM', 'secret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Me->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Me))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-09-29 21:53:32 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 158.
+ 1 APPPATH\Controllers\Loading.php(320): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTYwMzUxMDMsImV4cCI6MTY5NjA0MjMwMywidWlkIjoiMSIsImVtYWlsIjoic2F0cmlhQHJlaGFuZGxpbmcuY29tIiwicm9sZSI6InVzZXIiLCJuYW1hIjoiU2F0cmlhIE11bHlhIEFkaXdhcmRhbmEifQ.YtgQw5z1g5pBTVrdFCPwM9gBprk4ev4NVtqd0XCzhgM', 'secret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loading->tampil()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loading))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+CRITICAL - 2023-09-29 21:53:42 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 158.
+ 1 APPPATH\Controllers\Loading.php(320): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTYwMzUxMDMsImV4cCI6MTY5NjA0MjMwMywidWlkIjoiMSIsImVtYWlsIjoic2F0cmlhQHJlaGFuZGxpbmcuY29tIiwicm9sZSI6InVzZXIiLCJuYW1hIjoiU2F0cmlhIE11bHlhIEFkaXdhcmRhbmEifQ.YtgQw5z1g5pBTVrdFCPwM9gBprk4ev4NVtqd0XCzhgM', 'secret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loading->tampil()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loading))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIclubhouse\\public\\index.php')
+ERROR - 2023-09-29 22:27:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_she`.`loadings`, CONSTRAINT `loadinguser` FOREIGN KEY (`created_by_id`) REFERENCES `users` (`user_id`)) in C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\APIclubhouse\app\Controllers\Loading.php(258): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Loading->create()
+#6 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loading))
+#7 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\APIclubhouse\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2023-09-29 23:20:11 --> mysqli_sql_exception: Unknown column 'updated_by_id' in 'field list' in C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\APIclubhouse\app\Controllers\Loading.php(259): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Loading->create()
+#6 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loading))
+#7 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\APIclubhouse\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
