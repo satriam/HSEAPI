@@ -32,8 +32,8 @@ class Pengaduan extends ResourceController
             $validate = $this->validate([
                 'file' => [
                     'uploaded[file]',
-                    'max_size[file,200000]',  // 8MB maximum size (adjust as needed)
-                    'ext_in[file,png,jpg,jpeg,pdf,mp4,mpeg,quicktime]', // Specify allowed file extensions
+                    'max_size[file,200000]',
+                    'ext_in[file,png,jpg,jpeg,pdf,mp4,mpeg,quicktime]',
                 ],
             ]);    
                 $file = $this->request->getFile('file');
@@ -46,7 +46,9 @@ class Pengaduan extends ResourceController
                 $unit = $this->request->getVar('unit');
                 $nama_orang = $this->request->getVar('nama_orang');
                 $nomorhp = $this->request->getVar('nomorhp');
-                
+               
+                $nomorTiket = "Pengaduan/SHE/".date('YmdHis') . mt_rand(1000, 9999);
+
 
                     if ($validate) {
                         // Renaming file before upload
@@ -64,7 +66,9 @@ class Pengaduan extends ResourceController
                             "perusahaan" => $perusahaan,
                             "unit" => $unit,
                             "nama_orang" => $nama_orang,
-                            "nomorhp" => $nomorhp
+                            "nomorhp" => $nomorhp,
+                            "status"=> "proses",
+                            "ticket"=> $nomorTiket
                         ];
                   
                         $db = \Config\Database::connect();

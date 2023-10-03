@@ -45,17 +45,17 @@ $routes-> resource('pengaduan');
 
 
 
-$routes->put('auth','Auth::index',['filter'=>'auth']);
-// $routes->resource('login');
-$routes->post('register', 'Register::index');
-$routes->post('login', 'Login::index');
+// $routes->put('auth','Auth::index',['filter'=>'auth']);
+// // $routes->resource('login');
+// $routes->post('register', 'Register::index');
+// $routes->post('login', 'Login::index');
 
-$routes->get('checkin','Checkin::index',['filter'=>'auth']);
-$routes->get('checkin','Checkin::indexall');
-$routes->post('checkin','Checkin::store',['filter'=>'auth']);
+// $routes->get('checkin','Checkin::index',['filter'=>'auth']);
+// $routes->get('checkin','Checkin::indexall');
+// $routes->post('checkin','Checkin::store',['filter'=>'auth']);
 
-$routes->get('masteraccess','Masterrole::index');
-$routes->post('masteraccess','Masterrole::create',['filter'=>'auth']);
+// $routes->get('masteraccess','Masterrole::index');
+// $routes->post('masteraccess','Masterrole::create',['filter'=>'auth']);
 
 $routes->get('authall','Auth::indexall');
 
