@@ -12,18 +12,25 @@ class Safety extends ResourceController
     protected $modelName = 'App\Models\SafetyModel';
     protected $format = 'json';
     public function index()
-    {
-        $data = $this->model->orderBy('id_safety', 'asc')->findAll();
-        if($data == null){
-            return $this->response->setJSON([
-                "message" => "Tidak Ada Data"
-            ]); 
-        }else{
+{
+    // Mendapatkan tanggal awal dan akhir bulan saat ini
+    $startOfMonth = date('Y-m-01');
+    $endOfMonth = date('Y-m-t');
+
+    $data = $this->model
+    ->where("DATE_FORMAT(created_at, '%Y-%m')", date('Y-m'))
+    ->where('mitra', 'rehandling')
+    ->orderBy('created_at', 'desc')
+    ->findAll(3);
+       
+    if (empty($data)) {
+        return $this->response->setJSON([
+            "message" => "Tidak Ada Data"
+        ]);
+    } else {
         return $this->respond($data, 200);
-        }
     }
-
-
+}
 
     public function create()
     {
@@ -43,6 +50,7 @@ class Safety extends ResourceController
             $img1 = $file->getName();
             $userid = $decoded->uid;
             $keterangan = $this->request->getVar('keterangan');
+            $mitra = $this->request->getVar('mitra');
             
            if ($file == Null && $keterangan == Null) {
                 return $this->response->setJSON([
@@ -57,7 +65,8 @@ class Safety extends ResourceController
                 $data = [
                     'created_by_id'=>$userid,
                     'img_url' => "/safetycampaign/" . $newfilename,
-                    'keterangan' => $keterangan
+                    'keterangan' => $keterangan,
+                    'mitra'=>$mitra
                 ];
                 $builder = $db->table('safety');
                 $builder->insert($data);
